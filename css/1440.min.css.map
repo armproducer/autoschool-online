@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/1440.sass"
+    ],
+    "names": [],
+    "file": "1440.min.css"
+}
