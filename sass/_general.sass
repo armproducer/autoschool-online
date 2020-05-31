@@ -101,14 +101,16 @@ header
 
 .main
     min-height: 635px
-    background: url('../img/bg_main_big.jpg') left center/cover no-repeat
-    padding: 140px 0 0 126px
+    background: url('../img/bg.jpg') left center repeat
+    padding: 136px 0 0 134px
+    position: relative
+    overflow: hidden
     &_promo
         padding-top: 10px
         padding-left: 20px
-        width: 605px //525
-        height: 360px //313
-        background: url('../img/bg_for_text_main.png') center center/cover
+        width: 605px 
+        height: 360px 
+        background: #ECECEC 
         position: relative
         &_decoration
             position: absolute
@@ -117,7 +119,6 @@ header
             width: 13px
             height: 130px
             background: #FFD014
-            border-radius: 
         &_above_title
             font-size: 20px
             font-style: italic
@@ -140,6 +141,14 @@ header
             color: #636363
             line-height: 25px
             margin-bottom: 30px
+    &_road
+        position: absolute
+        top: 0
+        left: 770px
+        z-index: 2
+        height: 100%
+        // width: 1200px
+        
 
 .audience
     padding-top: 60px
