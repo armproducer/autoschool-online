@@ -35,20 +35,30 @@
       <a class="logo" href="/index.html">
         <img src="/icons/main_icon.png" alt="лого" />
       </a>
-      <nav>
+      <nav class="menu">
         <ul>
-          <li><a href="#content" class="flowing-scroll">Преимущества</a></li>
-          <li><a href="#subjects" class="flowing-scroll">Содержание</a></li>
-          <li><a href="#reviews" class="flowing-scroll">Отзывы</a></li>
-          <li><a href="#price" class="flowing-scroll">Цены</a></li>
-          <li><a href="#faq" class="flowing-scroll">Вопрос - Ответ</a></li>
+          <li class="menu_item"><a href="#content" class="flowing-scroll">Преимущества</a></li>
+          <li class="menu_item"><a href="#subjects" class="flowing-scroll">Содержание</a></li>
+          <li class="menu_item"><a href="#reviews" class="flowing-scroll">Отзывы</a></li>
+          <li class="menu_item"><a href="#price" class="flowing-scroll">Цены</a></li>
+          <li class="menu_item"><a href="#faq" class="flowing-scroll">Вопрос - Ответ</a></li>
         </ul>
       </nav>
       <div class="authorization">
         <img src="/icons/account.png" alt="аккаунт" />
-        <a href="" class="authorization_enter">Вход</a>
+        <a href="#" class="authorization_enter">Вход</a>
         <span> / </span>
-        <a href="" class="authorization_enter">Регистрация</a>
+        <a href="#" class="authorization_enter">Регистрация</a>
+      </div>
+      <a class="authorization_mobile" href="#">
+        <div class="authorization_mobile_circle">
+          <img src="/icons/account.png" alt="аккаунт" />
+        </div>
+      </a>
+      <div class="mobile_menu">
+        <div class="mobile_menu_line"></div>
+        <div class="mobile_menu_line"></div>
+        <div class="mobile_menu_line"></div>
       </div>
     </header>
 
@@ -1087,6 +1097,7 @@
     <script src="/js/collapse.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/js/scroll.js"></script>
+    <script src="/js/mobile_menu.js"></script>
 
   </body>
 </html>

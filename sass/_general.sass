@@ -45,16 +45,17 @@ button:focus
 
 header
     margin: 0 auto
-    max-width: 1200px
+    max-width: 1360px
     height: 118px
-    padding: 38px 0 26px 0
+    padding: 38px 80px 26px 80px
     display: flex
     justify-content: space-between
     align-items: center
     .logo
+        width: 216px
         img
-            width: 216px
-    nav
+            width: 100%
+    .menu
         ul
             display: flex
             justify-content: space-between
@@ -98,6 +99,38 @@ header
             vertical-align: middle
             color: #545454
             margin: 0 2px
+    .authorization_mobile
+        display: none
+        margin-right: 62px
+        &_circle
+            width: 37px
+            height: 37px
+            background-color: #FFD014
+            border-radius: 28px
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                width: 14px
+    .mobile_menu
+        z-index: 4
+        display: none
+        position: absolute
+        right: 0
+        bottom: center
+        padding-right: 90px
+        padding-top: 1px
+        cursor: pointer
+        height: 31px
+        &_line
+            height: 3px
+            width: 32px
+            background: #545454
+            margin-top: 6px
+            border-radius: 5px
+            transition: 0.2s all
+            &:first-child
+                margin-top: 0
 
 .main
     min-height: 635px
