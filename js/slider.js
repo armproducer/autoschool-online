@@ -10,4 +10,5 @@ $(".reviews-carousel").flickity({
   cellAlign: "center",
   contain: true,
   wrapAround: true,
+  autoPlay: 4500,
 });

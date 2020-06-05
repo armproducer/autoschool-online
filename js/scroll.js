@@ -5,11 +5,12 @@ $(".flowing-scroll").on("click", function () {
     // проверяем существование
     $("html").animate(
       {
-        scrollTop: $(dest).offset().top, // прокручиваем страницу к требуемому элементу
+        scrollTop: $(dest).offset().top - 75, // прокручиваем страницу к требуемому элементу
       },
       500 // скорость прокрутки
     );
   }
+  mobileMenu.classList.toggle("mobile_menu_active");
   return false;
 });
 

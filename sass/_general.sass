@@ -10,12 +10,11 @@ h2
     color: #424242
     text-align: center
     font-weight: 600
-    margin-bottom: 86px
+    margin-bottom: 66px
+    padding: 0 30px
 
 button:active
     outline: none
-    // transform: translateY(4px)
-    // transition: 0.2s all
 
 button:focus
     outline: none
@@ -43,15 +42,15 @@ button:focus
     img
         width: 100%
 
-header
+.header
     margin: 0 auto
     max-width: 1360px
-    height: 118px
     padding: 38px 80px 26px 80px
     display: flex
     justify-content: space-between
     align-items: center
     .logo
+        z-index: 4
         width: 216px
         img
             width: 100%
@@ -75,6 +74,7 @@ header
             li:last-child
                 margin-right: 0
     .authorization
+        z-index: 4
         width: 169px
         height: 37px
         background-color: #FFD014
@@ -100,6 +100,7 @@ header
             color: #545454
             margin: 0 2px
     .authorization_mobile
+        z-index: 4
         display: none
         margin-right: 62px
         &_circle
@@ -131,6 +132,8 @@ header
             transition: 0.2s all
             &:first-child
                 margin-top: 0
+            &_short
+                width: 20px
 
 .main
     min-height: 635px
@@ -180,47 +183,56 @@ header
         left: 770px
         z-index: 2
         height: 100%
-        // width: 1200px
         
 
 .audience
-    padding-top: 60px
-    min-height: 671px
-    &_container
-        margin: 0 auto
-        max-width: 1037px
-        display: flex
-        justify-content: space-between
-        &_item
-            width: 227px
-            height: 360px
-            border-radius: 19px
-            background: #F9F9F9
-            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15)
-            &_picture
-                img
-                    border-top-left-radius: 19px
-                    border-top-right-radius: 19px
-            &_text
-                display: flex
-                align-items: center
-                margin: 0 auto
-                width: 185px
-                height: 99px
-                font-size: 16px
-                font-weight: 400
-                line-height: 18px
-                color: #444444
-                text-align: center
-                margin-top: 25px
-                margin-bottom: 24px
-            &_check
-                margin: 0 auto
-                width: 50px
-                height: 50px
-                background: white url('/icons/check.png') center center no-repeat
-                border-radius: 50%
-                box-shadow: 0px 0px 5.76531px rgba(0, 0, 0, 0.25)
+    padding: 80px 0
+    h2
+        margin-bottom: 26px
+    &_scroll
+        overflow-x: auto
+        width: 100%
+        padding: 15px 0
+        &_container
+            display: flex
+            justify-content: center
+            min-width: 100%
+            padding: 10px 30px
+            float: left
+            &_item
+                width: 227px
+                height: 360px
+                border-radius: 19px
+                margin-right: 48px
+                background: #F9F9F9
+                box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15)
+                &:last-child
+                    margin-right: 0
+                &_picture
+                    img
+                        width: 100%
+                        border-top-left-radius: 19px
+                        border-top-right-radius: 19px
+                &_text
+                    display: flex
+                    align-items: center
+                    margin: 0 auto
+                    height: 99px
+                    font-size: 16px
+                    font-weight: 400
+                    line-height: 18px
+                    color: #444444
+                    text-align: center
+                    margin-top: 25px
+                    margin-bottom: 24px
+                    padding: 0 20px
+                &_check
+                    margin: 0 auto
+                    width: 50px
+                    height: 50px
+                    background: white url('/icons/check.png') center center no-repeat
+                    border-radius: 50%
+                    box-shadow: 0px 0px 5.76531px rgba(0, 0, 0, 0.25)
 
 .content
     padding-top: 60px
@@ -305,14 +317,16 @@ header
     h2
         margin-bottom: 10px
     &_container
-        width: 1001px
+        max-width: 1001px
         margin: 0 auto
         display: flex
         justify-content: space-between
         flex-wrap: wrap
         &_item
+            margin: 0 auto
             margin-top: 80px
             width: 267px
+            padding: 0 10px
             &_logo
                 width: 107px
                 height: 107px
@@ -323,6 +337,8 @@ header
                 display: flex
                 justify-content: center
                 align-items: center
+                img
+                    width: 70%
             &_header
                 margin-top: 16px
                 font-weight: 600
@@ -464,27 +480,28 @@ header
     h2
         margin-bottom: 60px
     &_carousel
-        max-width: 1360px
         margin: 0 auto
         margin-bottom: 80px
         .flickity-viewport
         .carousel-cell
-            width: 395px
+            max-width: 395px
             height: 450px
             margin-right: 70px
         .flickity-button
-            background: none
+            background: #ffd014c5
         .flickity-button:hover
-            background: none
+            background: #FFD014
         .flickity-prev-next-button
-            width: 60px
-            height: 60px
+            width: 50px
+            height: 50px
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15)
+            border-radius: 50%
         .flickity-button-icon
-            fill: #FFD014
+            fill: #ffffff
         .flickity-prev-next-button.previous
-            left: -100px
+            left: 30px
         .flickity-prev-next-button.next
-            right: -100px
+            right: 30px
         .flickity-page-dots
             bottom: -32px
         .carousel-cell img
@@ -505,7 +522,7 @@ header
             &_content
                 position: relative
                 box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.15)
-                width: 395px
+                max-width: 395px
                 height: 420px
                 border-radius: 9px
                 padding: 0 47px
@@ -532,7 +549,6 @@ header
                             font-weight: 300
                             font-size: 12px
                 &_text
-                    // width: 100%
                     height: 204px
                     margin-top: 25px
                     font-weight: 300
@@ -566,7 +582,7 @@ header
         float: right
         display: flex
         flex-direction: column
-        margin-right: 60px
+        margin-right: 160px
         &_item
             text-align: right
             color: #858585
@@ -578,12 +594,10 @@ header
                 color: #858585
 
 .price
-    padding-top: 60px
-    padding-bottom: 60px
-    min-height: 725px
+    padding: 60px 40px
     background: #F8F8F8
     &_view
-        width: 987px
+        max-width: 987px
         display: flex
         justify-content: space-between
         margin: 0 auto
@@ -609,6 +623,7 @@ header
                 &_pic
                     margin-bottom: 16px
                     img
+                        width: 100%
                         border-radius: 0px 15px 0px 0px
                 &_type
                     font-weight: 300
@@ -618,8 +633,9 @@ header
                 &_cost
                     font-weight: bold
                     font-size: 32px
-                    line-height: 38px
+                    // line-height: 38px
                     margin-left: 40px
+                    margin-bottom: 10px
             .green_light
                 background: rgba(72, 181, 30, 0.12)
             &_button
@@ -634,13 +650,11 @@ header
                 align-items: center
 
 .questions
-    min-height: 500px
-    padding-top: 60px
-    padding-bottom: 40px
+    padding: 60px 20px 40px 20px
     h2
         margin-bottom: 62px
     &_faq
-        width: 914px
+        max-width: 914px
         margin: 0 auto
         &_item
             width: 100%
@@ -652,13 +666,11 @@ header
             margin-top: 38px
             cursor: pointer
             &_text
-                text-align: center
                 font-weight: 600
                 font-size: 19px
                 line-height: 26px
                 color: #424242
                 position: relative
-                text-align: center
                 &:before
                     content: ''
                     display: block
