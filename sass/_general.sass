@@ -350,6 +350,15 @@ button:focus
                 font-size: 17px
                 line-height: 20px
                 text-align: center
+    &_show_button
+        display: none
+        margin: 0 auto
+        margin-top: 50px
+        margin-bottom: 30px
+        width: 260px
+        text-align: center
+        border-bottom: dotted 1px black
+        padding: 10px 0 1px 0
     button
         display: block
         margin: 0 auto
@@ -357,11 +366,10 @@ button:focus
 
 .subjects
     padding-top: 60px
-    padding-bottom: 60px
-    min-height: 752px
+    padding-bottom: 100px
     background: #F8F8F8
     &_container
-        width: 1170px
+        max-width: 1170px
         margin: 0 auto
         &_box
             display: flex
@@ -401,6 +409,16 @@ button:focus
                     box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.15)
                     border-radius: 9px
                     background: white
+                    &_header
+                        display: none
+                        font-size: 16px
+                        line-height: 16px
+                        font-weight: 600
+                        padding: 30px 0
+                        text-align: center
+                        width: 240px
+                        height: 102px
+                        margin: 0 auto
                     &_pic
                         width: 554px
                         height: 100%
@@ -461,6 +479,7 @@ button:focus
                             font-size: 15px
                             line-height: 17px
                             color: #5F5F5F
+                            text-align: center
         &_demo_link
             float: right
             text-align: right
@@ -633,7 +652,6 @@ button:focus
                 &_cost
                     font-weight: bold
                     font-size: 32px
-                    // line-height: 38px
                     margin-left: 40px
                     margin-bottom: 10px
             .green_light
@@ -700,7 +718,7 @@ button:focus
                 line-height: 24px
                 color: #666666
     &_form
-        width: 720px
+        max-width: 720px
         height: 374px
         padding: 45px 75px
         box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15)
@@ -721,7 +739,7 @@ button:focus
                 display: flex
                 justify-content: space-between
                 &_item
-                    width: 262px
+                    width: 46%
                     margin-top: 46px
                     border: none
                     border-bottom: 1px solid #C2C2C2
@@ -731,6 +749,8 @@ button:focus
                 &:focus
                     border: none
                     outline: none
+            .long
+                width: 100%
         &_submit
             display: block
             margin: 0 auto
@@ -746,9 +766,6 @@ button:focus
             color: #424242
             &:hover
                 background: #ffda46
-
-.long
-    width: 571px
 
 .active > .questions_faq_item_text:before
     transform: rotate(90deg)
