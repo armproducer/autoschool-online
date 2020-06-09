@@ -1063,16 +1063,16 @@
             </div>
           </div>
         </div>
-        <form class="questions_form">
+        <form class="questions_form" action="#">
           <div class="questions_form_header">
             Остались вопросы?
           </div>
           <div class="questions_form_input_block">
             <div class="questions_form_input_block_short">
-              <input class="questions_form_input_block_short_item" type="text" name="username" placeholder="Ваше имя"></input>
-              <input class="questions_form_input_block_short_item" type="text" name="usertelephone" placeholder="Ваш телефон"></input>
+              <input class="questions_form_input_block_short_item" required type="text" name="username" placeholder="Ваше имя"></input>
+              <input class="questions_form_input_block_short_item" required type="tel" name="usertelephone" placeholder="Ваш телефон"></input>
             </div>
-            <input class="questions_form_input_block_short_item long" type="text" name="question" placeholder="Ваш вопрос"></input>
+            <textarea class="questions_form_input_block_short_item long" rows=1 required type="text" name="question" placeholder="Ваш вопрос"></textarea>
           </div>
           <button class="questions_form_submit">Отправить</button>
         </form>
@@ -1123,5 +1123,7 @@
     <script src="/js/mobile_menu.js"></script>
     <script src="/js/mobile_menu_shorter.js"></script>
     <script src="/js/advantages_mobile.js"></script>
+    <script src="/js/textarea_auto_resize.js"></script>
+    <script src="/js/subjects_small_screen.js"></script>
   </body>
 </html>
