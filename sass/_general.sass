@@ -359,6 +359,7 @@ button:focus
         text-align: center
         border-bottom: dotted 1px black
         padding: 10px 0 1px 0
+        cursor: pointer
     button
         display: block
         margin: 0 auto
@@ -805,3 +806,95 @@ footer
             &:hover
                 color: #FFD014
                 text-decoration: none
+
+.overlay
+    position: fixed
+    z-index: 8
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,0.5)
+    display: none
+    &_modal
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        padding: 39px 49px
+        background: #fff
+        border-radius: 28px
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5)
+        width: 497px
+        max-height: 100%
+        &_logo
+            margin: 0 auto
+            width: 177px
+            margin-bottom: 12px
+            img
+                width: 100%
+        &_divider
+            height: 1px
+            background: #E9E9E9
+            position: relative
+            &_text
+                font-weight: 300
+                font-size: 12px
+                line-height: 14px
+                color: #626262
+                padding: 0 10px
+                background-color: #ffffff
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+                width: 139px
+                margin: 0 auto
+                text-align: center
+        &_header
+            margin-top: 26px
+            margin-bottom: 28px
+            font-weight: normal
+            font-size: 22px
+            line-height: 26px
+            text-align: center
+        &_input
+            display: block
+            width: 100%
+            height: 48px
+            margin-top: 15px
+            border: none
+            border-radius: 8px
+            background-color: rgba(240, 240, 240, 0.66)
+            padding: 0 27px
+            &::placeholder
+                font-weight: 300
+                font-size: 16px
+                line-height: 19px
+                color: #9D9D9D
+        &_button
+            display: block
+            margin: 0 auto
+            margin-top: 38px
+            margin-bottom: 34px
+            border: none
+            height: 41px
+            width: 203px
+            border-radius: 44px
+            background: #FFD014
+        &_footer_text
+            font-weight: 400
+            font-size: 16px
+            line-height: 19px
+            text-align: center
+            margin-top: 23px
+        &_close
+            position: absolute
+            top: -50px
+            right: -32px
+            font-size: 60px
+            line-height: 60px
+            color: #FFD014
+            cursor: pointer
+
+#enter, #registration
+    display: none

@@ -1069,8 +1069,8 @@
           </div>
           <div class="questions_form_input_block">
             <div class="questions_form_input_block_short">
-              <input class="questions_form_input_block_short_item" required type="text" name="username" placeholder="Ваше имя"></input>
-              <input class="questions_form_input_block_short_item" required type="tel" name="usertelephone" placeholder="Ваш телефон"></input>
+              <input class="questions_form_input_block_short_item" required type="text" name="username" placeholder="Ваше имя">
+              <input class="questions_form_input_block_short_item" required type="tel" name="usertelephone" placeholder="Ваш телефон">
             </div>
             <textarea class="questions_form_input_block_short_item long" rows=1 required type="text" name="question" placeholder="Ваш вопрос"></textarea>
           </div>
@@ -1099,6 +1099,59 @@
     <a href="#top" class="pageup flowing-scroll">
       <img src="/icons/up.svg" alt="Прокрутка вверх">
     </a>
+
+    <div class="overlay">
+
+      <form class="overlay_modal" action="#" id="enter">
+        <div class="overlay_modal_logo">
+          <img src="/icons/main_icon.png" alt="лого">
+        </div>
+        <div class="overlay_modal_divider"></div>
+        <h3 class="overlay_modal_header">
+          Вход
+        </h3>
+        <input type="text" class="overlay_modal_input" required name="usertelephone" placeholder="Номер телефона">
+        <input type="password" class="overlay_modal_input" required name="password" placeholder="Пароль">
+        
+        <button class="overlay_modal_button">
+          Войти
+        </button>
+        <div class="overlay_modal_divider">
+          <div class="overlay_modal_divider_text">
+            Новый пользователь?
+          </div>
+        </div>
+        <div class="overlay_modal_footer_text">
+          Регистрация »
+        </div>
+        <div class="overlay_modal_close">&times;</div>
+      </form>
+
+      <form class="overlay_modal" action="#" id="registration">
+        <div class="overlay_modal_logo">
+          <img src="/icons/main_icon.png" alt="лого">
+        </div>
+        <div class="overlay_modal_divider"></div>
+        <h3 class="overlay_modal_header">
+          Вход
+        </h3>
+        <input type="text" class="overlay_modal_input" required name="usertelephone" placeholder="Номер телефона">
+        <input type="password" class="overlay_modal_input" required name="password" placeholder="Пароль">
+        
+        <button class="overlay_modal_button">
+          Войти
+        </button>
+        <div class="overlay_modal_divider">
+          <div class="overlay_modal_divider_text">
+            Новый пользователь?
+          </div>
+        </div>
+        <div class="overlay_modal_footer_text">
+          Регистрация »
+        </div>
+        <div class="overlay_modal_close">&times;</div>
+      </form>
+    </div>
     
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -1125,5 +1178,6 @@
     <script src="/js/advantages_mobile.js"></script>
     <script src="/js/textarea_auto_resize.js"></script>
     <script src="/js/subjects_small_screen.js"></script>
+    <script src="/js/modal.js"></script>
   </body>
 </html>
