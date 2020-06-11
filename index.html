@@ -48,7 +48,7 @@
         <img src="/icons/account.png" alt="аккаунт" />
         <a href="#" class="authorization_enter">Вход</a>
         <span> / </span>
-        <a href="#" class="authorization_enter">Регистрация</a>
+        <a href="#" class="authorization_registration">Регистрация</a>
       </div>
       <a class="authorization_mobile" href="#">
         <div class="authorization_mobile_circle">
@@ -1069,10 +1069,10 @@
           </div>
           <div class="questions_form_input_block">
             <div class="questions_form_input_block_short">
-              <input class="questions_form_input_block_short_item" required type="text" name="username" placeholder="Ваше имя">
-              <input class="questions_form_input_block_short_item" required type="tel" name="usertelephone" placeholder="Ваш телефон">
+              <input class="questions_form_input_block_short_item"  type="text" name="username" placeholder="Ваше имя">
+              <input class="questions_form_input_block_short_item"  type="tel" name="usertelephone" placeholder="Ваш телефон">
             </div>
-            <textarea class="questions_form_input_block_short_item long" rows=1 required type="text" name="question" placeholder="Ваш вопрос"></textarea>
+            <textarea class="questions_form_input_block_short_item long" rows=1  type="text" name="question" placeholder="Ваш вопрос"></textarea>
           </div>
           <button class="questions_form_submit">Отправить</button>
         </form>
@@ -1110,9 +1110,13 @@
         <h3 class="overlay_modal_header">
           Вход
         </h3>
-        <input type="text" class="overlay_modal_input" required name="usertelephone" placeholder="Номер телефона">
-        <input type="password" class="overlay_modal_input" required name="password" placeholder="Пароль">
-        
+        <input type="text" class="overlay_modal_input"  name="user_telephone" placeholder="Номер телефона">
+        <input type="password" class="overlay_modal_input"  name="password" placeholder="Пароль">
+        <div class="overlay_modal_under_input">
+          <input type="checkbox" id="remember" name="remember" value="no">
+          <label for="remember">Запомнить меня</label>
+          <a class="password_recovery_trigger" href="#">Забыли пароль?</a>
+        </div>
         <button class="overlay_modal_button">
           Войти
         </button>
@@ -1122,7 +1126,9 @@
           </div>
         </div>
         <div class="overlay_modal_footer_text">
-          Регистрация »
+          <a class="registration_trigger" href="#">
+            Регистрация »
+          </a>
         </div>
         <div class="overlay_modal_close">&times;</div>
       </form>
@@ -1133,24 +1139,140 @@
         </div>
         <div class="overlay_modal_divider"></div>
         <h3 class="overlay_modal_header">
-          Вход
+          Регистрация
         </h3>
-        <input type="text" class="overlay_modal_input" required name="usertelephone" placeholder="Номер телефона">
-        <input type="password" class="overlay_modal_input" required name="password" placeholder="Пароль">
-        
+        <input type="text" class="overlay_modal_input"  name="user_name" placeholder="Ваше имя">
+        <input type="text" class="overlay_modal_input"  name="user_telephone" placeholder="Номер телефона">
+        <input type="password" class="overlay_modal_input"  name="password" placeholder="Пароль">
+        <input type="password" class="overlay_modal_input"  name="password_twice" placeholder="Введите пароль повторно">
+        <div class="overlay_modal_under_input">
+          <input type="checkbox" id="license" name="remember" value="no">
+          <label for="license">
+            <div>
+              Я принимаю условия <a href="#">пользовательского соглашения</a> и согласен(а) с <a href="#">политикой конфидениальности</a>
+            </div>
+          </label>
+        </div>
         <button class="overlay_modal_button">
-          Войти
+          Создать аккаунт
         </button>
+        <div class="overlay_modal_divider">
+          <div class="overlay_modal_divider_text">
+            Уже зарегистрированы?
+          </div>
+        </div>
+        <div class="overlay_modal_footer_text">
+          <a class="enter_trigger" href="#">
+            Вход »
+          </a>
+        </div>
+        <div class="overlay_modal_close">&times;</div>
+      </form>
+
+      <form class="overlay_modal" action="#" id="password_recovery">
+        <div class="overlay_modal_logo">
+          <img src="/icons/main_icon.png" alt="лого">
+        </div>
+        <div class="overlay_modal_divider"></div>
+        <h3 class="overlay_modal_header">
+          Восстановление пароля
+        </h3>
+        <input type="text" class="overlay_modal_input"  name="user_telephone" placeholder="Номер телефона">
+        <button class="overlay_modal_button">
+          Получить код
+        </button>
+        <div class="overlay_modal_divider">
+          <div class="overlay_modal_divider_text">
+            Уже зарегистрированы?
+          </div>
+        </div>
+        <div class="overlay_modal_footer_text">
+          <a class="enter_trigger" href="#">
+            Вход »
+          </a>
+        </div>
+        <div class="overlay_modal_close">&times;</div>
+      </form>
+
+      <form class="overlay_modal" action="#" id="code_entering">
+        <div class="overlay_modal_logo">
+          <img src="/icons/main_icon.png" alt="лого">
+        </div>
+        <div class="overlay_modal_divider"></div>
+        <h3 class="overlay_modal_header">
+          Восстановление пароля
+        </h3>
+        <div class="overlay_modal_over_input">
+          На ваш номер телефона отправлен код. Для подтверждения сброса пароля, пожалуйста, введите его.
+        </div>
+        <input type="text" class="overlay_modal_input"  name="code" placeholder="Введите код">
+        <div class="overlay_modal_under_input">
+          <div>Не пришел пароль?</div>
+          <a href="#">Отправить пароль повторно</a>
+        </div>
+        <button class="overlay_modal_button">
+          Подтвердить
+        </button>
+        <div class="overlay_modal_divider">
+          <div class="overlay_modal_divider_text">
+            Уже зарегистрированы?
+          </div>
+        </div>
+        <div class="overlay_modal_footer_text">
+          <a class="enter_trigger" href="#">
+            Вход »
+          </a>
+        </div>
+        <div class="overlay_modal_close">&times;</div>
+      </form>
+
+      <form class="overlay_modal" action="#" id="new_password">
+        <div class="overlay_modal_logo">
+          <img src="/icons/main_icon.png" alt="лого">
+        </div>
+        <div class="overlay_modal_divider"></div>
+        <h3 class="overlay_modal_header">
+          Новый пароль
+        </h3>
+        <input type="password" class="overlay_modal_input"  name="password" placeholder="Новый пароль">
+        <input type="password" class="overlay_modal_input"  name="password_twice" placeholder="Новый пароль повторно">
+        <button class="overlay_modal_button">
+          Подтвердить
+        </button>
+        <div class="overlay_modal_divider">
+          <div class="overlay_modal_divider_text">
+            Уже зарегистрированы?
+          </div>
+        </div>
+        <div class="overlay_modal_footer_text">
+          <a class="enter_trigger" href="#">
+            Вход »
+          </a>
+        </div>
+        <div class="overlay_modal_close">&times;</div>
+      </form>
+
+      <div class="overlay_modal" id="thanks">
+        <div class="overlay_modal_logo">
+          <img src="/icons/main_icon.png" alt="лого">
+        </div>
+        <div class="overlay_modal_divider"></div>
+        <div class="overlay_modal_over_input">
+          Спасибо за интерес к нашему курсу! Для ответа на Ваш вопрос с Вами свяжется наш специалист.
+        </div>
         <div class="overlay_modal_divider">
           <div class="overlay_modal_divider_text">
             Новый пользователь?
           </div>
         </div>
         <div class="overlay_modal_footer_text">
-          Регистрация »
+          <a class="registration_trigger" href="#">
+            Регистрация »
+          </a>
         </div>
         <div class="overlay_modal_close">&times;</div>
-      </form>
+      </div>
+      
     </div>
     
     <script

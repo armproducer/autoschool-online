@@ -812,9 +812,10 @@ footer
     z-index: 8
     top: 0
     width: 100%
-    height: 100%
+    min-height: 100%
     background-color: rgba(0,0,0,0.5)
     display: none
+    // overflow-y: auto
     &_modal
         position: absolute
         top: 50%
@@ -825,7 +826,6 @@ footer
         border-radius: 28px
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5)
         width: 497px
-        max-height: 100%
         &_logo
             margin: 0 auto
             width: 177px
@@ -847,7 +847,7 @@ footer
                 top: 50%
                 left: 50%
                 transform: translate(-50%,-50%)
-                width: 139px
+                min-width: 139px
                 margin: 0 auto
                 text-align: center
         &_header
@@ -857,6 +857,11 @@ footer
             font-size: 22px
             line-height: 26px
             text-align: center
+        &_over_input
+            font-size: 14px
+            text-align: center
+            line-height: 17px
+            margin-bottom: 26px
         &_input
             display: block
             width: 100%
@@ -871,10 +876,48 @@ footer
                 font-size: 16px
                 line-height: 19px
                 color: #9D9D9D
+        &_under_input
+            margin-top: 20px
+            font-size: 14px
+            line-height: 18px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            min-height: 34px
+            a
+                height: 100%
+                color: black
+                text-decoration: underline
+                display: flex
+                align-items: center
+            input
+                position: absolute
+                z-index: -2
+                opacity: 0
+            label
+                margin: 0
+                padding-left: 48px
+                position: relative
+                height: 100%
+                display: flex
+                align-items: center
+                a
+                    display: inline
+                    text-decoration: underline
+            input + label::before
+                content: ''
+                position: absolute
+                width: 34px
+                height: 34px
+                left: 0
+                background-color: #F0F0F0
+                border-radius: 7px
+            input:checked + label::before
+                background: #F0F0F0 url('/icons/check_yellow.png') center center no-repeat
         &_button
             display: block
             margin: 0 auto
-            margin-top: 38px
+            margin-top: 30px
             margin-bottom: 34px
             border: none
             height: 41px
@@ -887,6 +930,10 @@ footer
             line-height: 19px
             text-align: center
             margin-top: 23px
+            a
+                padding: 6px
+                color: black
+                text-decoration: none
         &_close
             position: absolute
             top: -50px
@@ -896,5 +943,24 @@ footer
             color: #FFD014
             cursor: pointer
 
-#enter, #registration
+#enter, #registration, #password_recovery, #code_entering, #new_password, #thanks
     display: none
+
+#code_entering
+    .overlay_modal_under_input
+        padding: 0 16px
+        margin-top: 10px
+        flex-wrap: wrap
+        div
+            padding: 8px 0
+            margin-right: 8px
+        a
+            text-decoration: underline
+            padding: 8px 0
+
+#thanks
+    .overlay_modal_over_input
+        font-size: 18px
+        line-height: 22px
+        margin-top: 30px
+        margin-bottom: 40px
