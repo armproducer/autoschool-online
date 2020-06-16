@@ -31,23 +31,24 @@
 
     .content
         &_wrapper
-            width: 96%
-            // .nav-tabs
-            //     overflow: scroll
-            &_tab
-                // padding-bottom: 0
-                width: 900px
-                overflow: hidden 
-                &_item
-                    a
-                        font-size: 14px
-                .nav-link
-                    padding: 10px 16px 5px 16px
+            width: 100%
+            &_scroll
+                padding: 0 20px
+                overflow-x: auto
+                &_tab
+                    width: 900px
+                    &_item
+                        a
+                            font-size: 14px
+
+                    .nav-link
+                        padding: 10px 16px 5px 16px
             &_box
                 width: 85%
                 &_item
                     &_description
                         font-size: 17px
+                        padding: 0 20px
                     &_carousel
                         .carousel-cell
                             height: 450px
