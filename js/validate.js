@@ -1,1 +1,0 @@
-$("#enter form").validate();
