@@ -28,6 +28,7 @@
       href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
@@ -206,19 +207,7 @@
                   role="tab"
                   aria-controls="exams"
                   aria-selected="false"
-                  >Экзамен ГИБДД</a
-                >
-              </li>
-              <li class="nav-item content_wrapper_scroll_tab_item">
-                <a
-                  class="nav-link"
-                  id="tickets-tab"
-                  data-toggle="tab"
-                  href="#tickets"
-                  role="tab"
-                  aria-controls="tickets"
-                  aria-selected="false"
-                  >Экзаменационные билеты</a
+                  >Билеты и экзамен ГИБДД</a
                 >
               </li>
               <li class="nav-item content_wrapper_scroll_tab_item">
@@ -291,11 +280,13 @@
                 каждой подтемы. Разбор преподавателем правильных/неправильных
                 ответов на вопросы.
               </div>
-              <iframe class="youtube_video"
-                      src="https://www.youtube.com/embed/QN30tHXxCCc"
-                      allow="accelerometer; autoplay; gyroscope"
-                      allowfullscreen>
-              </iframe>
+              <iframe
+                class="youtube_video"
+                src="https://www.youtube-nocookie.com/embed/QN30tHXxCCc?loop=1&iv_load_policy=3&controls=0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope;  picture-in-picture"
+                allowfullscreen
+                iv_load_policy="3"
+              ></iframe>
             </div>
             <div
               class="tab-pane content_wrapper_box_item fade"
@@ -304,21 +295,9 @@
               aria-labelledby="exams-tab"
             >
               <div class="content_wrapper_box_item_description">
-                Система тестирования идентичная системе принятия экзаменов в
-                ГИБДД. Повышенный уровень сложности, гарантирующий 100% сдачу
-                экзамена в ГИБДД.
-              </div>
-            </div>
-            <div
-              class="tab-pane content_wrapper_box_item fade"
-              id="tickets"
-              role="tabpanel"
-              aria-labelledby="tickets-tab"
-            >
-              <div class="content_wrapper_box_item_description">
                 Решение и разбор всех (40) экзаменационных билетов во время
-                лекций и самостоятельно. Режим повторного решения только тех
-                вопросов, в которых были доупщены ошибки.
+                лекций и самостоятельно. Система тестирования идентичная системе
+                принятия экзаменов в ГИБДД.
               </div>
             </div>
             <div
@@ -2600,6 +2579,7 @@
     <script src="/js/textarea_auto_resize.js"></script>
     <script src="/js/subjects_small_screen.js"></script>
     <script src="/js/modal.js"></script>
+    <script src="/js/youtube.js"></script>
     <script src="/js/lazysizes.min.js" async></script>
   </body>
 </html>
