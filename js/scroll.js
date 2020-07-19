@@ -11,6 +11,7 @@ $(".flowing-scroll").on("click", function () {
     );
   }
   mobileMenu.classList.toggle("mobile_menu_active");
+  menu.classList.toggle("menu_active");
   return false;
 });
 
