@@ -11,3 +11,4 @@ $(".reviews-carousel").flickity({
   contain: true,
   wrapAround: true,
 });
+

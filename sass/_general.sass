@@ -50,6 +50,23 @@ button:focus
     img
         width: 100%
 
+.text-rub
+    font-size: 20px
+
+.section_links
+    display: flex
+    flex-direction: column
+    margin-right: 160px
+    &_item
+        text-align: right
+        color: #858585
+        text-decoration: underline
+        font-size: 16px
+        font-weight: 400
+        margin-bottom: 5px
+        &:hover
+            color: #858585
+
 .header
     margin: 0 auto
     max-width: 1360px
@@ -250,7 +267,7 @@ button:focus
         margin: 0 auto
         &_scroll
             &_tab
-                width: 1100px
+                width: 900px
                 margin: 0 auto
                 display: flex
                 padding-left: 0
@@ -357,16 +374,6 @@ button:focus
                 font-size: 17px
                 line-height: 20px
                 text-align: center
-    &_show_button
-        display: none
-        margin: 0 auto
-        margin-top: 50px
-        margin-bottom: 30px
-        width: 260px
-        text-align: center
-        border-bottom: dotted 1px black
-        padding: 10px 0 1px 0
-        cursor: pointer
     button
         display: block
         margin: 0 auto
@@ -488,18 +495,6 @@ button:focus
                             line-height: 17px
                             color: #5F5F5F
                             text-align: center
-        &_demo_link
-            text-align: right
-            margin-right: 60px
-            margin-top: 50px
-            color: black
-            text-decoration: underline
-            font-size: 16px
-            font-weight: 400
-            display: flex
-            justify-content: flex-end
-            &:hover
-                color: black
 
 .reviews
     padding-top: 60px
@@ -603,22 +598,9 @@ button:focus
                             width: 27px
                             height: 27px
                             background: url('../icons/instagram.png')
-    &_links
-        display: flex
-        flex-direction: column
-        margin-right: 160px
-        &_item
-            text-align: right
-            color: #858585
-            text-decoration: underline
-            font-size: 16px
-            font-weight: 400
-            margin-bottom: 5px
-            &:hover
-                color: #858585
 
 .price
-    padding: 60px 40px
+    padding: 60px 0px
     background: #F8F8F8
     &_view
         max-width: 987px
@@ -631,34 +613,28 @@ button:focus
                 width: 451px
                 height: 366px
                 box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.15)
-                border-radius: 0px 15px 15px 0px
+                border-radius: 9px
                 background: rgba(218, 75, 75, 0.1)
                 display: flex
                 flex-direction: column
-                &_decoration
-                    position: absolute
-                    left: 0
-                    top: 0
-                    width: 15px
-                    height: 100%
-                    background: #DA4B4B
-                .green
-                    background: #48B51E
                 &_pic
                     margin-bottom: 16px
                     img
                         width: 100%
-                        border-radius: 0px 15px 0px 0px
+                        border-radius: 9px 9px 0px 0px
                 &_type
                     font-weight: 300
                     font-size: 24px
                     margin-bottom: 2px
                     margin-left: 40px
+                    margin-right: 6px
+                    font-weight: 500
                 &_cost
                     font-weight: bold
                     font-size: 32px
                     margin-left: 40px
                     margin-bottom: 10px
+                    margin-right: 20px
             .green_light
                 background: rgba(72, 181, 30, 0.12)
             &_button
