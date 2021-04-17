@@ -1,98 +1,23 @@
-const carousel2 = document.querySelector(".main-carousel2");
-const carousel3 = document.querySelector(".main-carousel3");
-
-if (window.matchMedia("(max-width: 1024px)").matches) {
-  const fragment = document.createDocumentFragment();
-  for (let i = 1; i <= 4; i++) {
-    const element = document.createElement("div");
-    element.classList.add(
-      "carousel-cell",
-      "content_wrapper_box_item_carousel_cell"
-    );
-    element.insertAdjacentHTML(
-      "afterbegin",
-      `
-        <img src="/img/Exam${i}.jpg" alt="exam_pic${i}" />
-      `
-    );
-    fragment.appendChild(element);
-  }
-  carousel2.appendChild(fragment);
-} else {
-  const fragment = document.createDocumentFragment();
-  for (let i = 1; i <= 4; i++) {
-    const element = document.createElement("div");
-    element.classList.add(
-      "carousel-cell",
-      "content_wrapper_box_item_carousel_cell"
-    );
-    element.insertAdjacentHTML(
-      "afterbegin",
-      `
-        <img src="/img/Exam_desktop${i}.jpg" alt="exam_pic${i}" />
-      `
-    );
-    fragment.appendChild(element);
-  }
-  carousel2.appendChild(fragment);
-}
-
-if (window.matchMedia("(max-width: 1024px)").matches) {
-  const fragment = document.createDocumentFragment();
-  for (let i = 1; i <= 4; i++) {
-    const element = document.createElement("div");
-    element.classList.add(
-      "carousel-cell",
-      "content_wrapper_box_item_carousel_cell"
-    );
-    element.insertAdjacentHTML(
-      "afterbegin",
-      `
-        <img src="/img/Stat${i}.jpg" alt="stat_pic${i}" />
-      `
-    );
-    fragment.appendChild(element);
-  }
-  carousel3.appendChild(fragment);
-} else {
-  const fragment = document.createDocumentFragment();
-  for (let i = 1; i <= 4; i++) {
-    const element = document.createElement("div");
-    element.classList.add(
-      "carousel-cell",
-      "content_wrapper_box_item_carousel_cell"
-    );
-    element.insertAdjacentHTML(
-      "afterbegin",
-      `
-        <img src="/img/Stat_desktop${i}.jpg" alt="stat_pic${i}" />
-      `
-    );
-    fragment.appendChild(element);
-  }
-  carousel3.appendChild(fragment);
-}
-
-$(".main-carousel").flickity({
-  // options
-  cellAlign: "center",
-  contain: true,
-  wrapAround: true,
-});
-
-$(".main-carousel2").flickity({
-  // options
-  cellAlign: "center",
-  contain: true,
-  wrapAround: true,
-});
-
-$(".main-carousel3").flickity({
-  // options
-  cellAlign: "center",
-  contain: true,
-  wrapAround: true,
-});
+setTimeout(() => {
+  var elem = document.querySelector('.main-carousel');
+  var flkty = new Flickity( elem, {
+    cellAlign: "center",
+    contain: true,
+    wrapAround: true
+  });
+  var elem2 = document.querySelector('.main-carousel2');
+  var flkty2 = new Flickity( elem2, {
+    cellAlign: "center",
+    contain: true,
+    wrapAround: true
+  });
+  var elem3 = document.querySelector('.main-carousel3');
+  var flkty3 = new Flickity( elem3, {
+    cellAlign: "center",
+    contain: true,
+    wrapAround: true
+  });
+}, 100)
 
 $(".reviews-carousel").flickity({
   // options
@@ -101,17 +26,14 @@ $(".reviews-carousel").flickity({
   wrapAround: true,
 });
 
-const questions = document.getElementById("questions");
-const exams = document.getElementById("exams");
-const stats = document.getElementById("stats");
 
-questions.classList.remove("active");
-questions.classList.remove("show");
-exams.classList.remove("active");
-exams.classList.remove("show");
-stats.classList.remove("active");
-stats.classList.remove("show");
+const tabButton = document.querySelector('.tab_hide_button');
+const tabItem = document.querySelector('.tab_hide_item');
 
-const size = window.screen.width;
-console.log(size);
+tabItem.style.visibility = 'hidden';
+tabItem.style.height = '0';
 
+tabButton.addEventListener('click', function() {
+  tabItem.style.visibility = 'visible';
+  tabItem.style.height = 'auto';
+});

@@ -164,70 +164,24 @@
         <h2>Что мы предлагаем?</h2>
         <div class="content_wrapper">
           <div class="content_wrapper_scroll">
-            <ul
-              class="nav nav-tabs content_wrapper_scroll_tab"
-              id="content_tab"
-              role="tablist"
-            >
-              <li class="nav-item content_wrapper_scroll_tab_item">
-                <a
-                  class="nav-link active"
-                  id="unique-tab"
-                  data-toggle="tab"
-                  href="#unique"
-                  role="tab"
-                  aria-controls="unique"
-                  aria-selected="true"
-                >
-                  Уникальный контент
-                </a>
+            <ul class="content_wrapper_scroll_tab">
+              <li class="content_wrapper_scroll_tab_item">
+                <a href="">Уникальный контент</a>
               </li>
-              <li class="nav-item content_wrapper_scroll_tab_item">
-                <a
-                  class="nav-link"
-                  id="questions-tab"
-                  data-toggle="tab"
-                  href="#questions"
-                  role="tab"
-                  aria-controls="questions"
-                  aria-selected="false"
-                  >Интерактивные опросы</a
-                >
+              <li class="content_wrapper_scroll_tab_item">
+                Интерактивные опросы
               </li>
-              <li class="nav-item content_wrapper_scroll_tab_item">
-                <a
-                  class="nav-link"
-                  id="exams-tab"
-                  data-toggle="tab"
-                  href="#exams"
-                  role="tab"
-                  aria-controls="exams"
-                  aria-selected="false"
-                  >Билеты и экзамен ГИБДД</a
-                >
+              <li class="content_wrapper_scroll_tab_item tab_hide_button">
+                Билеты и экзамен ГИБДД
               </li>
-              <li class="nav-item content_wrapper_scroll_tab_item">
-                <a
-                  class="nav-link"
-                  id="stats-tab"
-                  data-toggle="tab"
-                  href="#stats"
-                  role="tab"
-                  aria-controls="stats"
-                  aria-selected="false"
-                  >Статистика</a
-                >
+              <li class="content_wrapper_scroll_tab_item">
+                Статистика
               </li>
             </ul>
           </div>
 
-          <div class="tab-content content_wrapper_box" id="content_tab_content">
-            <div
-              class="tab-pane content_wrapper_box_item fade show active"
-              id="unique"
-              role="tabpanel"
-              aria-labelledby="unique-tab"
-            >
+          <div class="content_wrapper_box" id="content_tab_content">
+            <div class="content_wrapper_box_item">
               <div class="content_wrapper_box_item_description">
                 Качественные лекции с авторскими наглядными 3д иллюстрациями.
                 Интерактивная доска.
@@ -265,12 +219,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="tab-pane content_wrapper_box_item fade show active"
-              id="questions"
-              role="tabpanel"
-              aria-labelledby="questions-tab"
-            >
+            <div class="content_wrapper_box_item">
               <div class="content_wrapper_box_item_description">
                 Система закрепления материала. Вопросы во время лекции после
                 каждой подтемы. Разбор преподавателем правильных/неправильных
@@ -284,12 +233,7 @@
                 iv_load_policy="3"
               ></iframe>
             </div>
-            <div
-              class="tab-pane content_wrapper_box_item fade show active"
-              id="exams"
-              role="tabpanel"
-              aria-labelledby="exams-tab"
-            >
+            <div class="content_wrapper_box_item tab_hide_item">
               <div class="content_wrapper_box_item_description">
                 Решение и разбор всех (40) экзаменационных билетов во время
                 лекций и самостоятельно. Система тестирования идентичная системе
@@ -299,20 +243,15 @@
                 class="main-carousel2 content_wrapper_box_item_carousel"
               ></div>
             </div>
-            <div
-              class="tab-pane content_wrapper_box_item fade show active"
-              id="stats"
-              role="tabpanel"
-              aria-labelledby="stats-tab"
-            >
+            <div class="content_wrapper_box_item">
               <div class="content_wrapper_box_item_description">
                 Статистика успеваемости. Отслеживание эффективности усвоения
                 материала по лекциям, билетам, а также по темам пройденных
                 предметов.
               </div>
-              <div class="main-carousel3 content_wrapper_box_item_carousel">
-               
-              </div>
+              <div
+                class="main-carousel3 content_wrapper_box_item_carousel"
+              ></div>
             </div>
           </div>
         </div>
@@ -2506,6 +2445,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/constructSlider.js"></script>
     <script src="/js/flickity.pkgd.min.js"></script>
     <script src="/js/slider.js"></script>
     <script src="/js/collapse.js"></script>
