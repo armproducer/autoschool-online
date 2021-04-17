@@ -606,14 +606,17 @@ button:focus
     padding: 60px 0px
     background: #F8F8F8
     &_container
-        max-width: 1100px
-        margin: 0 auto
+        min-width: 100%
     &_dome
+        margin: 0 auto
+        max-width: 1100px
         display: flex
-        justify-content: space-around
+        justify-content: center
+        padding: 40px 0px
+        overflow-x: scroll
     &_wrapper
-        width: 306px
-        height: 632px
+        min-width: 306px
+        height: 640px
         padding: 0px 26px 0px 26px
         margin-top: 42px
         background: #FFFFFF
@@ -623,7 +626,6 @@ button:focus
         border-radius: 19.8205px
         transition: 0.2s ease all
         &:hover
-            //border: 1px solid #48B51E
             transform: scale(1.02)
             transition: 0.2s ease all
     &_title
@@ -728,14 +730,14 @@ button:focus
         line-height: 17px
         border: none
     &_wrapper2
-        height: 680px
-        width: 305px
+        margin: 0 40px
+        height: 688px
+        min-width: 306px
         background: #FFFFFF
         border: 1px solid #d1d1d1
         border-radius: 19.8205px
         transition: 0.2s ease all
         &:hover
-            //border: 1px solid #48B51E
             transform: scale(1.02)
             transition: 0.2s ease all
     &_green
