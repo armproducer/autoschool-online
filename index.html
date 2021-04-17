@@ -72,9 +72,7 @@
       <section class="main" id="main">
         <div class="main_promo">
           <div class="main_promo_decoration"></div>
-          <div class="main_promo_above_title">
-            Дистанционное обучение
-          </div>
+          <div class="main_promo_above_title">Дистанционное обучение</div>
           <h1 class="main_promo_title">
             Теоретический
             <br />курс ПДД
@@ -84,9 +82,7 @@
             <br/>Статистика успеваемости. Решение билетов. Подготовка к
             экзамену в ГИБДД.
           </div>
-          <button class="main_green_button">
-            Начать обучение
-          </button>
+          <button class="main_green_button">Начать обучение</button>
         </div>
         <img
           class="main_road lazyload"
@@ -159,76 +155,28 @@
         </div>
       </section>
 
-      
-
       <section class="content" id="content">
         <h2>Что мы предлагаем?</h2>
         <div class="content_wrapper">
           <div class="content_wrapper_scroll">
-            <ul
-              class="nav nav-tabs content_wrapper_scroll_tab"
-              id="content_tab"
-              role="tablist"
-            >
-              <li class="nav-item content_wrapper_scroll_tab_item">
-                <a
-                  class="nav-link active"
-                  id="unique-tab"
-                  data-toggle="tab"
-                  href="#unique"
-                  role="tab"
-                  aria-controls="unique"
-                  aria-selected="true"
-                >
-                  Уникальный контент
-                </a>
+            <ul class="content_wrapper_scroll_tab">
+              <li class="content_wrapper_scroll_tab_item tab_hide_button" data-number = "1">
+                Уникальный контент
               </li>
-              <li class="nav-item content_wrapper_scroll_tab_item">
-                <a
-                  class="nav-link"
-                  id="questions-tab"
-                  data-toggle="tab"
-                  href="#questions"
-                  role="tab"
-                  aria-controls="questions"
-                  aria-selected="false"
-                  >Интерактивные опросы</a
-                >
+              <li class="content_wrapper_scroll_tab_item tab_hide_button" data-number = "2">
+                Интерактивные опросы
               </li>
-              <li class="nav-item content_wrapper_scroll_tab_item">
-                <a
-                  class="nav-link"
-                  id="exams-tab"
-                  data-toggle="tab"
-                  href="#exams"
-                  role="tab"
-                  aria-controls="exams"
-                  aria-selected="false"
-                  >Билеты и экзамен ГИБДД</a
-                >
+              <li class="content_wrapper_scroll_tab_item tab_hide_button" data-number = "3">
+                Билеты и экзамен ГИБДД
               </li>
-              <li class="nav-item content_wrapper_scroll_tab_item">
-                <a
-                  class="nav-link"
-                  id="stats-tab"
-                  data-toggle="tab"
-                  href="#stats"
-                  role="tab"
-                  aria-controls="stats"
-                  aria-selected="false"
-                  >Статистика</a
-                >
+              <li class="content_wrapper_scroll_tab_item tab_hide_button" data-number = "4">
+                Статистика
               </li>
             </ul>
           </div>
 
-          <div class="tab-content content_wrapper_box" id="content_tab_content">
-            <div
-              class="tab-pane content_wrapper_box_item fade show active"
-              id="unique"
-              role="tabpanel"
-              aria-labelledby="unique-tab"
-            >
+          <div class="content_wrapper_box" id="content_tab_content">
+            <div class="content_wrapper_box_item tab_hide_item" data-number = "1">
               <div class="content_wrapper_box_item_description">
                 Качественные лекции с авторскими наглядными 3д иллюстрациями.
                 Интерактивная доска.
@@ -266,12 +214,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="tab-pane content_wrapper_box_item fade"
-              id="questions"
-              role="tabpanel"
-              aria-labelledby="questions-tab"
-            >
+            <div class="content_wrapper_box_item tab_hide_item" data-number = "2">
               <div class="content_wrapper_box_item_description">
                 Система закрепления материала. Вопросы во время лекции после
                 каждой подтемы. Разбор преподавателем правильных/неправильных
@@ -285,89 +228,25 @@
                 iv_load_policy="3"
               ></iframe>
             </div>
-            <div
-              class="tab-pane content_wrapper_box_item fade"
-              id="exams"
-              role="tabpanel"
-              aria-labelledby="exams-tab"
-            >
+            <div class="content_wrapper_box_item tab_hide_item" data-number = "3">
               <div class="content_wrapper_box_item_description">
                 Решение и разбор всех (40) экзаменационных билетов во время
                 лекций и самостоятельно. Система тестирования идентичная системе
                 принятия экзаменов в ГИБДД.
               </div>
-              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/img/exam1.jpg" class="d-block w-100" alt="exam1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/img/exam2.jpg" class="d-block w-100" alt="exam2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/img/exam3.jpg" class="d-block w-100" alt="exam3">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/img/exam4.jpg" class="d-block w-100" alt="exam4">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
+              <div
+                class="main-carousel2 content_wrapper_box_item_carousel"
+              ></div>
             </div>
-            <div
-              class="tab-pane content_wrapper_box_item fade"
-              id="stats"
-              role="tabpanel"
-              aria-labelledby="stats-tab"
-            >
+            <div class="content_wrapper_box_item tab_hide_item" data-number = "4">
               <div class="content_wrapper_box_item_description">
                 Статистика успеваемости. Отслеживание эффективности усвоения
                 материала по лекциям, билетам, а также по темам пройденных
                 предметов.
               </div>
-              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/img/stat1.jpg" class="d-block w-100" alt="stat1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/img/stat2.jpg" class="d-block w-100" alt="stat2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/img/stat3.jpg" class="d-block w-100" alt="stat3">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/img/stat4.jpg" class="d-block w-100" alt="stat4">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
+              <div
+                class="main-carousel3 content_wrapper_box_item_carousel"
+              ></div>
             </div>
           </div>
         </div>
@@ -416,9 +295,7 @@
             </div>
           </div>
         </div>
-        <button class="main_green_button">
-          Начать обучение
-        </button>
+        <button class="main_green_button">Начать обучение</button>
       </section>
 
       <section class="subjects" id="subjects">
@@ -803,11 +680,13 @@
               </div>
             </div>
           </div>
-          <br>
-          <br>
+          <br />
+          <br />
         </div>
         <div class="section_links">
-          <a href="#" class="section_links_item">Посмотреть демонстрационнный урок</a>
+          <a href="#" class="section_links_item"
+            >Посмотреть демонстрационнный урок</a
+          >
         </div>
       </section>
 
@@ -831,13 +710,12 @@
               </div>
               <div class="reviews_carousel_cell_content_text">
                 Хочу выразить огромную благодарность автошколе ‘Приоритет’ за
-                Онлайн курс пдд и возможность учиться, не выходя из дома.
-                Права получила ещё давно, но ездила очень мало. Сейчас приобрела
+                Онлайн курс пдд и возможность учиться, не выходя из дома. Права
+                получила ещё давно, но ездила очень мало. Сейчас приобрела
                 автомобиль и решила освежить в памяти правила дорожного
-                движения. Преподаватели очень доброжелательны, при
-                наличии вопросов всегда давали четкие, развёрнутые ответы.
-                Рекомендую. Останутся довольны все: работающие, студенты, мамочки
-                в декрете.
+                движения. Преподаватели очень доброжелательны, при наличии
+                вопросов всегда давали четкие, развёрнутые ответы. Рекомендую.
+                Останутся довольны все: работающие, студенты, мамочки в декрете.
               </div>
               <div class="reviews_carousel_cell_content_social">
                 <div class="reviews_carousel_cell_content_social_text">
@@ -929,8 +807,8 @@
                 </div>
               </div>
               <div class="reviews_carousel_cell_content_text">
-                Водительские права получила очень давно,  но стажа вождения было мало
-                и конечно ПДД с того времени изменились. После покупки авто
+                Водительские права получила очень давно,  но стажа вождения было
+                мало и конечно ПДД с того времени изменились. После покупки авто
                 возникла необходимость обновить знания. Т.к я нахожусь в
                 декрете, времени на полноценную учёбу в автошколе не было, и я
                 записалась на онлайн обучение. Все очень подробно объясняют и
@@ -984,7 +862,9 @@
                 и хотела переводиться в другую школу, но чуть позже наткнулась
                 на даный сайт. И моему счастью не было предела! Мало того, что я
                 за копейки получила качественный теоретический курс, при этом в
-                автошколе, в которую я изначально записалась, я смогла договориться о скидке 5000 рублей за то, что я прохожу обучение теории на данном сайте.
+                автошколе, в которую я изначально записалась, я смогла
+                договориться о скидке 5000 рублей за то, что я прохожу обучение
+                теории на данном сайте.
               </div>
               <div class="reviews_carousel_cell_content_social">
                 <div class="reviews_carousel_cell_content_social_text">
@@ -1027,7 +907,13 @@
                 </div>
               </div>
               <div class="reviews_carousel_cell_content_text">
-                Недавно на просторах интернета, пока искал автошколу, наткнулся на сайт автошколы приоритет. У них увидел очень интересное предложение, об онлайн обучении теории. Я тут же записался на курс. Все достаточно интересно и понятно, лекции проходят на одном дыхании, спасибо за организованность. И плюсом я сэкономил кучу времени, не посещая теорию в своей автошколе, где получал права.
+                Недавно на просторах интернета, пока искал автошколу, наткнулся
+                на сайт автошколы приоритет. У них увидел очень интересное
+                предложение, об онлайн обучении теории. Я тут же записался на
+                курс. Все достаточно интересно и понятно, лекции проходят на
+                одном дыхании, спасибо за организованность. И плюсом я сэкономил
+                кучу времени, не посещая теорию в своей автошколе, где получал
+                права.
               </div>
               <div class="reviews_carousel_cell_content_social">
                 <div class="reviews_carousel_cell_content_social_text">
@@ -1075,8 +961,8 @@
                 удостоверения, смогла благодаря им восстановить свои знания на
                 все 100% не выходя из дома! Это было интересно, познавательно,
                 доступно и оооочень удобно!! Можно посмотреть лекции по всем
-                темам в любом месте с любого имеющегося устройства!!
-                Спасибо всем! Теперь я с уверенностью за руль покорять столицу!
+                темам в любом месте с любого имеющегося устройства!! Спасибо
+                всем! Теперь я с уверенностью за руль покорять столицу!
               </div>
               <div class="reviews_carousel_cell_content_social">
                 <div class="reviews_carousel_cell_content_social_text">
@@ -1119,7 +1005,13 @@
                 </div>
               </div>
               <div class="reviews_carousel_cell_content_text">
-                Я пошёл в обычную автошколу. Но у меня сменный график работы и теорию я мог посещать изредка. Когда искал сам материал, то попал на автошколу приоритет и это решило мою проблему. В школе договорился просто прийти на внутренний экзамен по теории, а все изучил на онлайн курсе. В то время, когда было удобно мне. В наших реалиях это мега удобно. Спасибо за этот сервис! Кстати экзамен сдал с первого раза и без ошибок))
+                Я пошёл в обычную автошколу. Но у меня сменный график работы и
+                теорию я мог посещать изредка. Когда искал сам материал, то
+                попал на автошколу приоритет и это решило мою проблему. В школе
+                договорился просто прийти на внутренний экзамен по теории, а все
+                изучил на онлайн курсе. В то время, когда было удобно мне. В
+                наших реалиях это мега удобно. Спасибо за этот сервис! Кстати
+                экзамен сдал с первого раза и без ошибок))
               </div>
               <div class="reviews_carousel_cell_content_social">
                 <div class="reviews_carousel_cell_content_social_text">
@@ -1333,14 +1225,18 @@
                   alt="Занятия онлайн"
                 />
               </div>
-              <div class="price_view_box_item_type">Интерактивные лекции в записи</div>
-              <div class="price_view_box_item_cost">490 <span class="text-rub">руб.</span></div>
+              <div class="price_view_box_item_type">
+                Интерактивные лекции в записи
+              </div>
+              <div class="price_view_box_item_cost">
+                490 <span class="text-rub">руб.</span>
+              </div>
             </div>
             <button class="main_green_button price_view_box_button">
               Выбрать
             </button>
           </div>
-          <br>
+          <br />
           <div class="price_view_box">
             <div class="price_view_box_item green_light">
               <div class="price_view_box_item_pic">
@@ -1350,18 +1246,24 @@
                   alt="Занятия онлайн"
                 />
               </div>
-              <div class="price_view_box_item_type">Онлайн лекции в прямом эфире</div>
-              <div class="price_view_box_item_cost">2490 <span class="text-rub">руб.</span></div>
+              <div class="price_view_box_item_type">
+                Онлайн лекции в прямом эфире
+              </div>
+              <div class="price_view_box_item_cost">
+                2490 <span class="text-rub">руб.</span>
+              </div>
             </div>
             <button class="main_green_button price_view_box_button">
               Выбрать
             </button>
           </div>
         </div>
-        <br>
-        <br>
+        <br />
+        <br />
         <div class="section_links">
-          <a href="#" class="section_links_item">Посмотреть расписание онлайн лекций</a>
+          <a href="#" class="section_links_item"
+            >Посмотреть расписание онлайн лекций</a
+          >
         </div>
       </section>
 
@@ -1375,7 +1277,12 @@
           </div>
           <div class="questions_faq_hidden">
             <div class="questions_faq_hidden_text">
-              Данный курс предназначен только для изучения теории. Для прохождения курса вождения Вам необходимо записаться в автошколу в Вашем городе. При этом, в случае успешного прохождения нашего курса, проходить повторно теорию в выбранной Вами автошколе не придется. В подтверждение своих знаний Вы сможете досрочно сдать внутренний экзамен по теории.
+              Данный курс предназначен только для изучения теории. Для
+              прохождения курса вождения Вам необходимо записаться в автошколу в
+              Вашем городе. При этом, в случае успешного прохождения нашего
+              курса, проходить повторно теорию в выбранной Вами автошколе не
+              придется. В подтверждение своих знаний Вы сможете досрочно сдать
+              внутренний экзамен по теории.
             </div>
           </div>
           <div class="questions_faq_item">
@@ -1385,7 +1292,10 @@
           </div>
           <div class="questions_faq_hidden">
             <div class="questions_faq_hidden_text">
-              Доступ по времени не ограничен. Вы сможете пройти курс повторно, если возникнет необходимость. При этом, наш курс будет своевременно обновляться согласно будущим изменениям ПДД, и Вы можете быть уверены, что получите актуальную информацию.
+              Доступ по времени не ограничен. Вы сможете пройти курс повторно,
+              если возникнет необходимость. При этом, наш курс будет
+              своевременно обновляться согласно будущим изменениям ПДД, и Вы
+              можете быть уверены, что получите актуальную информацию.
             </div>
           </div>
           <div class="questions_faq_item">
@@ -1395,7 +1305,9 @@
           </div>
           <div class="questions_faq_hidden">
             <div class="questions_faq_hidden_text">
-              Вы сможете посмотреть ее в записи. При этом сохранится интерактивность наших лекций: Вы так же будете отвечать на вопросы преподавателя и получать обратную связь.
+              Вы сможете посмотреть ее в записи. При этом сохранится
+              интерактивность наших лекций: Вы так же будете отвечать на вопросы
+              преподавателя и получать обратную связь.
             </div>
           </div>
           <div class="questions_faq_item">
@@ -1411,9 +1323,7 @@
           </div>
         </div>
         <form class="questions_form" action="#">
-          <div class="questions_form_header">
-            Остались вопросы?
-          </div>
+          <div class="questions_form_header">Остались вопросы?</div>
           <div class="questions_form_input_block">
             <div class="questions_form_input_block_short">
               <input
@@ -1473,9 +1383,7 @@
           <img src="/icons/main_icon.svg" alt="лого" />
         </div>
         <div class="overlay_modal_divider"></div>
-        <h3 class="overlay_modal_header">
-          Вход
-        </h3>
+        <h3 class="overlay_modal_header">Вход</h3>
         <input
           required
           type="text"
@@ -1495,18 +1403,12 @@
           <label for="remember">Запомнить меня</label>
           <a class="password_recovery_trigger" href="#">Забыли пароль?</a>
         </div>
-        <button class="overlay_modal_button">
-          Войти
-        </button>
+        <button class="overlay_modal_button">Войти</button>
         <div class="overlay_modal_divider">
-          <div class="overlay_modal_divider_text">
-            Новый пользователь?
-          </div>
+          <div class="overlay_modal_divider_text">Новый пользователь?</div>
         </div>
         <div class="overlay_modal_footer_text">
-          <a class="registration_trigger" href="#">
-            Регистрация »
-          </a>
+          <a class="registration_trigger" href="#"> Регистрация » </a>
         </div>
         <div class="overlay_modal_close overlay_modal_close_common">
           &times;
@@ -1518,9 +1420,7 @@
           <img src="/icons/main_icon.svg" alt="лого" />
         </div>
         <div class="overlay_modal_divider"></div>
-        <h3 class="overlay_modal_header">
-          Регистрация
-        </h3>
+        <h3 class="overlay_modal_header">Регистрация</h3>
         <div class="overlay_modal_over_input">
           Прежде, чем начать обучение, пройдите регистрацию.
         </div>
@@ -1567,18 +1467,12 @@
             </span>
           </label>
         </div>
-        <button class="overlay_modal_button">
-          Создать аккаунт
-        </button>
+        <button class="overlay_modal_button">Создать аккаунт</button>
         <div class="overlay_modal_divider">
-          <div class="overlay_modal_divider_text">
-            Уже зарегистрированы?
-          </div>
+          <div class="overlay_modal_divider_text">Уже зарегистрированы?</div>
         </div>
         <div class="overlay_modal_footer_text">
-          <a class="enter_trigger" href="#">
-            Вход »
-          </a>
+          <a class="enter_trigger" href="#"> Вход » </a>
         </div>
         <div class="overlay_modal_close overlay_modal_close_common">
           &times;
@@ -1590,9 +1484,7 @@
           <img src="/icons/main_icon.svg" alt="лого" />
         </div>
         <div class="overlay_modal_divider"></div>
-        <h3 class="overlay_modal_header">
-          Восстановление пароля
-        </h3>
+        <h3 class="overlay_modal_header">Восстановление пароля</h3>
         <input
           required
           type="text"
@@ -1604,14 +1496,10 @@
           Получить код
         </button>
         <div class="overlay_modal_divider">
-          <div class="overlay_modal_divider_text">
-            Уже зарегистрированы?
-          </div>
+          <div class="overlay_modal_divider_text">Уже зарегистрированы?</div>
         </div>
         <div class="overlay_modal_footer_text">
-          <a class="enter_trigger" href="#">
-            Вход »
-          </a>
+          <a class="enter_trigger" href="#"> Вход » </a>
         </div>
         <div class="overlay_modal_close overlay_modal_close_common">
           &times;
@@ -1623,9 +1511,7 @@
           <img src="/icons/main_icon.svg" alt="лого" />
         </div>
         <div class="overlay_modal_divider"></div>
-        <h3 class="overlay_modal_header">
-          Восстановление пароля
-        </h3>
+        <h3 class="overlay_modal_header">Восстановление пароля</h3>
         <div class="overlay_modal_over_input">
           На ваш номер телефона отправлен код. Для подтверждения сброса пароля,
           пожалуйста, введите его.
@@ -1647,14 +1533,10 @@
           Подтвердить
         </button>
         <div class="overlay_modal_divider">
-          <div class="overlay_modal_divider_text">
-            Уже зарегистрированы?
-          </div>
+          <div class="overlay_modal_divider_text">Уже зарегистрированы?</div>
         </div>
         <div class="overlay_modal_footer_text">
-          <a class="enter_trigger" href="#">
-            Вход »
-          </a>
+          <a class="enter_trigger" href="#"> Вход » </a>
         </div>
         <div class="overlay_modal_close overlay_modal_close_common">
           &times;
@@ -1666,9 +1548,7 @@
           <img src="/icons/main_icon.svg" alt="лого" />
         </div>
         <div class="overlay_modal_divider"></div>
-        <h3 class="overlay_modal_header">
-          Восстановление пароля
-        </h3>
+        <h3 class="overlay_modal_header">Восстановление пароля</h3>
         <div class="overlay_modal_over_input">
           Код отправлен повторно. Для подтверждения сброса пароля, пожалуйста,
           введите его.
@@ -1690,14 +1570,10 @@
           Подтвердить
         </button>
         <div class="overlay_modal_divider">
-          <div class="overlay_modal_divider_text">
-            Уже зарегистрированы?
-          </div>
+          <div class="overlay_modal_divider_text">Уже зарегистрированы?</div>
         </div>
         <div class="overlay_modal_footer_text">
-          <a class="enter_trigger" href="#">
-            Вход »
-          </a>
+          <a class="enter_trigger" href="#"> Вход » </a>
         </div>
         <div class="overlay_modal_close overlay_modal_close_common">
           &times;
@@ -1709,9 +1585,7 @@
           <img src="/icons/main_icon.svg" alt="лого" />
         </div>
         <div class="overlay_modal_divider"></div>
-        <h3 class="overlay_modal_header">
-          Новый пароль
-        </h3>
+        <h3 class="overlay_modal_header">Новый пароль</h3>
         <input
           required
           type="password"
@@ -1730,14 +1604,10 @@
           Подтвердить
         </button>
         <div class="overlay_modal_divider">
-          <div class="overlay_modal_divider_text">
-            Уже зарегистрированы?
-          </div>
+          <div class="overlay_modal_divider_text">Уже зарегистрированы?</div>
         </div>
         <div class="overlay_modal_footer_text">
-          <a class="enter_trigger" href="#">
-            Вход »
-          </a>
+          <a class="enter_trigger" href="#"> Вход » </a>
         </div>
         <div class="overlay_modal_close overlay_modal_close_common">
           &times;
@@ -1754,14 +1624,10 @@
           свяжется наш специалист.
         </div>
         <div class="overlay_modal_divider">
-          <div class="overlay_modal_divider_text">
-            Новый пользователь?
-          </div>
+          <div class="overlay_modal_divider_text">Новый пользователь?</div>
         </div>
         <div class="overlay_modal_footer_text">
-          <a class="registration_trigger" href="#">
-            Регистрация »
-          </a>
+          <a class="registration_trigger" href="#"> Регистрация » </a>
         </div>
         <div class="overlay_modal_close overlay_modal_close_common">
           &times;
@@ -1773,18 +1639,12 @@
           <img src="/icons/main_icon.svg" alt="лого" />
         </div>
         <div class="overlay_modal_divider"></div>
-        <div class="overlay_modal_over_input">
-          Ваш пароль успешно изменен.
-        </div>
+        <div class="overlay_modal_over_input">Ваш пароль успешно изменен.</div>
         <div class="overlay_modal_divider">
-          <div class="overlay_modal_divider_text">
-            Уже зарегистрированы?
-          </div>
+          <div class="overlay_modal_divider_text">Уже зарегистрированы?</div>
         </div>
         <div class="overlay_modal_footer_text">
-          <a class="enter_trigger" href="#">
-            Вход »
-          </a>
+          <a class="enter_trigger" href="#"> Вход » </a>
         </div>
         <div class="overlay_modal_close overlay_modal_close_common">
           &times;
@@ -1796,9 +1656,7 @@
           <img src="/icons/main_icon.svg" alt="лого" />
         </div>
         <div class="overlay_modal_divider"></div>
-        <h3 class="overlay_modal_header">
-          Пользовательское соглашение
-        </h3>
+        <h3 class="overlay_modal_header">Пользовательское соглашение</h3>
         <div class="overlay_modal_over_input">
           <div>
             <div>
@@ -1981,14 +1839,10 @@
           </div>
         </div>
         <div class="overlay_modal_divider">
-          <div class="overlay_modal_divider_text">
-            Новый пользователь?
-          </div>
+          <div class="overlay_modal_divider_text">Новый пользователь?</div>
         </div>
         <div class="overlay_modal_footer_text">
-          <a class="registration_trigger" href="#">
-            Регистрация »
-          </a>
+          <a class="registration_trigger" href="#"> Регистрация » </a>
         </div>
         <div class="overlay_modal_close overlay_modal_close_to_registration">
           &times;
@@ -2000,9 +1854,7 @@
           <img src="/icons/main_icon.svg" alt="лого" />
         </div>
         <div class="overlay_modal_divider"></div>
-        <h3 class="overlay_modal_header">
-          Политика конфиденциальности
-        </h3>
+        <h3 class="overlay_modal_header">Политика конфиденциальности</h3>
         <div class="overlay_modal_over_input">
           <div>
             <ol>
@@ -2728,14 +2580,10 @@
           </div>
         </div>
         <div class="overlay_modal_divider">
-          <div class="overlay_modal_divider_text">
-            Новый пользователь?
-          </div>
+          <div class="overlay_modal_divider_text">Новый пользователь?</div>
         </div>
         <div class="overlay_modal_footer_text">
-          <a class="registration_trigger" href="#">
-            Регистрация »
-          </a>
+          <a class="registration_trigger" href="#"> Регистрация » </a>
         </div>
         <div class="overlay_modal_close overlay_modal_close_to_registration">
           &times;
@@ -2758,6 +2606,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="/js/constructSlider.js"></script>
     <script src="/js/flickity.pkgd.min.js"></script>
     <script src="/js/slider.js"></script>
     <script src="/js/collapse.js"></script>
