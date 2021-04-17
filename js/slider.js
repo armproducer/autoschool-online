@@ -37,7 +37,13 @@ tabItems.forEach( i => {
 });
 
 tabButtons.forEach( b => {
-  b.addEventListener('click', function() {
+  b.addEventListener('click', function(e) {
+    tabButtons.forEach( tb => {
+      tb.classList.remove('active');
+    });
+
+    b.classList.add('active');
+
     tabItems.forEach( i => {
       if(i.dataset.number === b.dataset.number) {
         i.style.visibility = 'visible';

@@ -278,17 +278,20 @@ button:focus
                     font-size: 16px
                     font-weight: 400
                     cursor: pointer
-                    color: #7c7c7c
-                    border: none
-                    padding: 10px 20px 9px 20px
-                    //active
-                    // background: none
-                    // border-bottom: 5px solid #FFD014
-                    // color: black
-                    // font-weight: 600
-                        
-                    // a:focus, a:hover
-                    //     color: #484848
+                    &_inside
+                        color: #7c7c7c
+                        border: none
+                        padding: 10px 20px 9px 20px
+                        margin-bottom: -1px
+                    &_inside:focus
+                        color: #484848
+                    &_inside:hover
+                        color: #484848
+                    .active
+                        background: none
+                        border-bottom: 5px solid #FFD014
+                        color: black
+                        font-weight: 600
         &_box
             width: 1000px
             margin: 0 auto
@@ -323,6 +326,7 @@ button:focus
                         display: block
                         height: 100%
                         border-radius: 9px
+                        border: solid 1px #e4e4e4
                     .flickity-page-dots .dot
                         width: 11px
                         height: 11px
