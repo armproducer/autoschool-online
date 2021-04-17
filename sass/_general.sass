@@ -601,20 +601,25 @@ button:focus
 .price
     padding: 60px 0px
     background: #F8F8F8
+    &_container
+        max-width: 1100px
+        margin: 0 auto
     &_dome
         display: flex
         justify-content: space-around
     &_wrapper 
         width: 306px
-        min-height: 632px
-        padding: 0px 37px 0px 26px
+        height: 632px
+        padding: 0px 26px 0px 26px
         margin-top: 42px
         background: #FFFFFF
-        box-shadow: 0px 0px 3.96411px rgba(0, 0, 0, 0.25)
+        // box-shadow: 0px 0px 3.96411px rgba(0, 0, 0, 0.25)
         border-radius: 19.8205px
-        border: 2px solid #48B51E
+        border: 1px solid #48B51E
         box-sizing: border-box
         border-radius: 19.8205px
+        &:hover
+            box-shadow: 0 0 10px rgba(0,0,0,0.5)
     &_title 
         font-size: 16px
         line-height: 19px
@@ -630,34 +635,41 @@ button:focus
         color: #4A4A4A
     &_line 
         width: 94px
-        border: 2px solid #48B51E
+        border: 1px solid #48B51E
         margin: 31px auto
     &_input
         display: flex
         justify-content: space-around
-        padding-bottom: 25px
-        margin-top: 25px
+        padding-bottom: 24px
+        margin-top: 20px
         border-bottom: 0.87473px solid #ECECEC
+        &_second
+            padding-bottom: 12px
     &_schedule
         font-weight: normal
+        width: 164px
         font-size: 14px
         line-height: 17px
         text-align: center
-        margin-top: 30px
+        margin: 0 auto
+        margin-top: 24px
         border-bottom: 1px dashed #434343
     &_item
-        width: 110px
+        width: 115px
         font-weight: 500
         font-size: 14px
         line-height: 17px
         display: flex
+        justify-content: center
         align-items: center
         text-align: right
         color: #969696
     &_choice
+        display: flex;
+        justify-content: left
+        align-items: center
         width: 110px
         font-weight: normal
-        text-align: left 
         font-size: 14px
         line-height: 17px
         color:  #000000  
@@ -667,12 +679,26 @@ button:focus
         line-height: 25px
         display: flex
         justify-content: center
-        margin-top: 95px
+        margin-top: 107px
+        &_second
+            margin-top: 26px
         span
             font-weight: bold
             font-size: 36px
             line-height: 44px
             color: #6FB64A
+        &_live
+            font-weight: normal
+            font-size: 21px
+            line-height: 25px
+            display: flex
+            justify-content: center
+            margin-top: 28px
+            span
+                font-weight: bold
+                font-size: 36px
+                line-height: 44px
+                color: #6FB64A
     &_theTotal
         width: 190px
         display: flex
@@ -686,7 +712,7 @@ button:focus
     &_button
         width: 171px
         height: 37px
-        margin-top:  25px 
+        margin-top:  23px 
         border-radius: 17.8424px
         background: #50C523
         font-style: normal
@@ -695,11 +721,14 @@ button:focus
         font-size: 14.0065px
         line-height: 17px
         border: none
-    &_wrapper2 
+    &_wrapper2
+        height: 680px
         width: 305px
         background: #FFFFFF
         box-shadow: 0px 0px 3.96411px rgba(0, 0, 0, 0.25)
         border-radius: 19.8205px
+        &:hover
+            box-shadow: 0 0 10px rgba(0,0,0,0.5)
     &_green
         padding: 31px
         background-color: #6FB64A
@@ -726,6 +755,9 @@ button:focus
         line-height: 27px
         text-align: center
         color: #FFFFFF
+    &_dome2
+        padding: 0 25px 0 25px
+
 
 
 
