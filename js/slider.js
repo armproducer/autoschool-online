@@ -1,23 +1,23 @@
 setTimeout(() => {
-  const elem = document.querySelector('.main-carousel');
-  const flkty = new Flickity( elem, {
+  const elem = document.querySelector(".main-carousel");
+  const flkty = new Flickity(elem, {
     cellAlign: "center",
     contain: true,
-    wrapAround: true
+    wrapAround: true,
   });
-  const elem2 = document.querySelector('.main-carousel2');
-  const flkty2 = new Flickity( elem2, {
+  const elem2 = document.querySelector(".main-carousel2");
+  const flkty2 = new Flickity(elem2, {
     cellAlign: "center",
     contain: true,
-    wrapAround: true
+    wrapAround: true,
   });
-  const elem3 = document.querySelector('.main-carousel3');
-  const flkty3 = new Flickity( elem3, {
+  const elem3 = document.querySelector(".main-carousel3");
+  const flkty3 = new Flickity(elem3, {
     cellAlign: "center",
     contain: true,
-    wrapAround: true
+    wrapAround: true,
   });
-}, 100)
+}, 100);
 
 $(".reviews-carousel").flickity({
   // options
@@ -26,34 +26,38 @@ $(".reviews-carousel").flickity({
   wrapAround: true,
 });
 
-const tabButtons = document.querySelectorAll('.tab_hide_button');
-const tabItems = document.querySelectorAll('.tab_hide_item');
+$(".price-carousel").flickity({
+  // options
+  cellAlign: "center",
+  contain: true,
+}).flickity( 'select', 1 );
 
-tabItems.forEach( i => {
-  if(i.dataset.number !== '1') {
-    i.style.visibility = 'hidden';
-    i.style.height = '0';
+const tabButtons = document.querySelectorAll(".tab_hide_button");
+const tabItems = document.querySelectorAll(".tab_hide_item");
+
+tabItems.forEach((i) => {
+  if (i.dataset.number !== "1") {
+    i.style.visibility = "hidden";
+    i.style.height = "0";
   }
 });
 
-tabButtons.forEach( b => {
-  b.addEventListener('click', function(e) {
-    tabButtons.forEach( tb => {
-      tb.classList.remove('active');
+tabButtons.forEach((b) => {
+  b.addEventListener("click", function (e) {
+    tabButtons.forEach((tb) => {
+      tb.classList.remove("active");
     });
 
-    b.classList.add('active');
+    b.classList.add("active");
 
-    tabItems.forEach( i => {
-      if(i.dataset.number === b.dataset.number) {
-        i.style.visibility = 'visible';
-        i.style.height = 'auto';
+    tabItems.forEach((i) => {
+      if (i.dataset.number === b.dataset.number) {
+        i.style.visibility = "visible";
+        i.style.height = "auto";
       } else {
-        i.style.visibility = 'hidden';
-        i.style.height = '0';
+        i.style.visibility = "hidden";
+        i.style.height = "0";
       }
-    })
+    });
   });
 });
-
-
