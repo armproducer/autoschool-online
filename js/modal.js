@@ -3,7 +3,7 @@ $(".authorization_enter, .authorization_mobile").on("click", function () {
   document.body.classList.add("body_stop_scroll");
 });
 
-$(".authorization_registration, .main_green_button").on("click", function () {
+$(".authorization_registration, .main_green_button, .price_button").on("click", function () {
   $(".overlay, #registration").fadeIn("fast");
   document.body.classList.add("body_stop_scroll");
 });

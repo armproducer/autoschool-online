@@ -26,14 +26,27 @@ $(".reviews-carousel").flickity({
   wrapAround: true,
 });
 
-$(".price-carousel").flickity({
-  // options
-  cellAlign: "center",
-  contain: true,
-}).flickity( 'select', 1 );
+if (window.matchMedia("(max-width: 1024px)").matches) {
+  $(".price-carousel").flickity({
+    // options
+    cellAlign: "center",
+    contain: true,
+  }).flickity( 'select', 1 );
+} else {
+  $(".price-carousel").flickity({
+    // options
+    cellAlign: "center",
+    contain: true,
+    draggable: false
+  }).flickity( 'select', 1 );
+}
+
+
 
 const tabButtons = document.querySelectorAll(".tab_hide_button");
 const tabItems = document.querySelectorAll(".tab_hide_item");
+
+const wrapper = document.querySelectorAll(".content_wrapper_scroll");
 
 tabItems.forEach((i) => {
   if (i.dataset.number !== "1") {
@@ -44,6 +57,15 @@ tabItems.forEach((i) => {
 
 tabButtons.forEach((b) => {
   b.addEventListener("click", function (e) {
+
+    $(".content_wrapper_scroll").animate(
+      {
+        scrollLeft:`${sizeFromLeft(b.dataset.number)}px`  
+      },
+      400
+    );
+
+
     tabButtons.forEach((tb) => {
       tb.classList.remove("active");
     });
@@ -61,3 +83,20 @@ tabButtons.forEach((b) => {
     });
   });
 });
+
+const windowWidth = window.innerWidth;
+
+function sizeFromLeft(size) {
+  switch(size) {
+    case '1':
+      return 0;
+    case '2':
+      return 24+172+17-(windowWidth-188)/2;  
+    case '3':
+      return 24+172+17+188+17-(windowWidth-198)/2;
+    case '4':
+      return 24+172+17+188+17+198+17-(windowWidth-106)/2;;
+    default:
+      return 0;
+  }
+}
